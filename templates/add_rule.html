@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Firewall Rule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Add Firewall Rule</h1>
+
+<form method="POST">
+
+<label>IP Address</label><br>
+<input type="text" name="ip" placeholder="Example: 192.168.1.50" required>
+
+<br><br>
+
+<label>Action</label><br>
+
+<select name="action">
+
+<option value="ALLOW">ALLOW</option>
+
+<option value="BLOCK">BLOCK</option>
+
+</select>
+
+<br><br>
+
+<button type="submit">
+Add Rule
+</button>
+
+</form>
+
+<br>
+
+<a href="/">⬅ Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>
